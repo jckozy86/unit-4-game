@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Crystalls Collector</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+        <div id="the game">
+            <div class="row">
+                <h1 class="border bg-primary text-light col-3"> Crystals Collector!</h1>
+            </div>
+
+            <div class="row">
+                <div class="border bg-info text-light col-6">
+                    <p></p>
+                    <p>You will be given a random number at the start of the game.</p>
+                    <p></p>
+                    <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                    <p></p>
+                    <p>You win the game by matching your total score to random number,you lose the game if your total score goes above the random number.</p>
+                    <p></p>
+                    <p>The value of each crystal is hidden from you until you click on it.</p>
+                    <p></p>
+                    <p>Each time when the game starts, the game will change the values of each crystal</p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-3">
+                    <p id="randomNumber" class="border bg-success mt-1"></p>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="col-2">
+                    <div id="winslosses" class="border bg-secondary bg-light">
+                        <p id="winlosstitle"></p>
+                        <p id="wins">Wins: 0</p>
+                        <p id="losses">Losses: 0</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div id="crystals">
+                    <img id="crystal1" class="button border" src="./assets/images/diamond.png"></img>
+                    <img id="crystal2" class="button border" src="./assets/images/emerald.png"></img>
+                    <img id="crystal3" class="button border" src="./assets/images/purple.png"></img>
+                    <img id="crystal4" class="button border" src="./assets/images/ruby.png"></img>
+                </div>
+            </div>
+
+            <div class="row">
+                <p id="title" class="border bg-info text-light mt-1 col-2">Your total score is: </p>
+                <p></p>
+            </div>
+
+            <div class="row">
+                <div class="border bg-info text-light mt-1 col-2">
+                    <p></p>
+                    <h2 id="score"></h2>
+                </div>
+            </div>
+
+        </div>
+        
+        <!-- jQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- Script -->
+        <script type="text/javascript" src="./assets/javascript/game.js"></script>
+
+    </body>
+</html>
